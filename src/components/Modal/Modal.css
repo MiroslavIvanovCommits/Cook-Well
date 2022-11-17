@@ -1,0 +1,88 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal {
+    z-index: 2;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 610px;
+    padding: 24px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-modal::after {
+    display: inline-block;
+    content: "\00d7";
+    font-size: 28px;
+}
+
+.modal-line {
+    display: flex;
+}
+
+.modal-circle {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #3593E9;
+    line-height: 0;
+    position: relative;
+}
+
+.modal-circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.modal-circle-text {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.modal-line-text {
+    display: inline;
+    margin: 0 0 0 16px;
+}

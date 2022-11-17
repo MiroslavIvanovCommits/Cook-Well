@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    background: #FFFFFF;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 140px;
+}
+
+/* Overriding Multiselect styles */
+
+.searchWrapper {
+    border: none;
+    border-radius: none;
+    padding: 0;
+}
+
+.optionListContainer {
+    width: 113%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin-left: -19px;
+    margin-top: 8px;
+}
+
+.highlightOption,
+.highlightOption:hover,
+.option:hover,
+.multiSelectContainer li:hover {
+    background: transparent;
+    color: black;
+}
+
+.search-bar,
+#search_input {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#search_input {
+    position: relative;
+    top: -4px;
+}

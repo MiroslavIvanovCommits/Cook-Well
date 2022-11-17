@@ -1,0 +1,6 @@
+.recipies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-left: 0px;
+}
